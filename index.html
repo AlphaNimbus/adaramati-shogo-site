@@ -10,22 +10,24 @@
 <link rel="stylesheet" href="shared.css" />
 <style>
 .hero{min-height:100svh;padding-top:82px;display:grid;grid-template-columns:1fr 1fr}
-.hero .copy{display:flex;flex-direction:column;justify-content:center;padding:8vw var(--pad)}
-.gold{color:var(--g)}
-.hero h1{font:500 clamp(56px,7.5vw,110px)/.85 "Cormorant Garamond";letter-spacing:-.05em;margin:24px 0}
-.hero h1 em{font-style:italic;color:var(--g)}
-.intro{max-width:520px;color:#4a463f;font-size:14px;line-height:1.85}
-.actions{display:flex;gap:16px;margin-top:30px;flex-wrap:wrap}
-.art{position:relative;overflow:hidden;background:#fff;border-left:1px solid var(--line)}
-.art img{width:100%;height:100%;object-fit:contain;padding:8%}
-.choices{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(0,0,0,.14)}
-.choices a{padding:40px var(--pad);color:#141310;border-right:1px solid rgba(0,0,0,.14);font:500 10px DM Mono;letter-spacing:.12em;text-transform:uppercase;transition:background 200ms cubic-bezier(.23,1,.32,1)}
-.choices a:hover{background:#e7e0d0}
+.copy{display:flex;flex-direction:column;justify-content:center;padding:8vw var(--pad)}
+.gold{color:#c6a768}
+h1{font:500 clamp(75px,10vw,150px)/.7 "Cormorant Garamond";letter-spacing:-.07em;margin:28px 0}
+h1 em{font-style:italic;color:#cdbb91}
+.intro{max-width:610px;color:#aaa69e;font-size:14px;line-height:1.85}
+.actions{display:flex;gap:16px;margin-top:30px}
+.art{position:relative;display:grid;place-items:center;background:radial-gradient(circle,#484033,#171512 38%,#070707 72%)}
+.art:before{content:"";position:absolute;width:70%;aspect-ratio:1;border:1px solid #8e713e;border-radius:50%}
+.frame{width:65%;aspect-ratio:4/5;border:1px solid #555;background:linear-gradient(145deg,#776d5d,#211e19 50%,#050505);display:grid;place-items:center;text-align:center;color:#aaa;font:8px DM Mono;letter-spacing:.15em;overflow:hidden}
+.frame img{width:100%;height:100%;object-fit:contain;padding:10%}
+.choices{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.choices a{padding:40px var(--pad);color:#ddd;border-right:1px solid var(--line);font:500 10px DM Mono;letter-spacing:.12em;text-transform:uppercase}
+.choices a:hover{background:#171613}
 @media(max-width:750px){.hero{grid-template-columns:1fr}
-.art{min-height:60vh}
+.art{min-height:70vh}
 .actions{flex-wrap:wrap}
 .choices{grid-template-columns:1fr}
-.choices a{border-right:0;border-bottom:1px solid rgba(0,0,0,.14)}
+.choices a{border-right:0;border-bottom:1px solid var(--line)}
 }
 </style>
 </head>
@@ -57,7 +59,9 @@
 </div>
 </div>
 <div class="art">
+<div class="frame">
 <img src="images/silent-barrage.jpg" alt="Silent Barrage, 2025" />
+</div>
 </div>
 </section>
 <div class="choices">
