@@ -9,14 +9,18 @@
 <link rel="icon" type="image/png" href="images/mark-round.png" />
 <link rel="stylesheet" href="shared.css" />
 <style>
-.hero{min-height:100svh;padding-top:82px;display:flex;align-items:center}
+.hero{min-height:100svh;padding-top:82px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center}
 .copy{padding:8vw var(--pad)}
 .gold{color:#c6a768}
 h1{font:500 clamp(75px,10vw,150px)/.7 "Cormorant Garamond";letter-spacing:-.07em;margin:28px 0}
 h1 em{font-style:italic;color:#cdbb91}
 .intro{max-width:610px;color:#69645b;font-size:14px;line-height:1.85}
 .actions{display:flex;gap:16px;margin-top:30px}
-@media(max-width:750px){.actions{flex-wrap:wrap}
+.art{padding:6vw}
+.art img{width:100%}
+@media(max-width:750px){.hero{grid-template-columns:1fr}
+.art{order:-1;padding:8vw 12vw 0}
+.actions{flex-wrap:wrap}
 }
 </style>
 </head>
@@ -46,6 +50,9 @@ h1 em{font-style:italic;color:#cdbb91}
 <a class="button" href="creative-direction.html">Creative Direction →</a>
 <a class="button" href="art.html">The Art Practice →</a>
 </div>
+</div>
+<div class="art">
+<img src="images/heartburn.png" alt="Heartburn" />
 </div>
 </section>
 </main>
