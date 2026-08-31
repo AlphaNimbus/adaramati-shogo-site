@@ -60,6 +60,17 @@ figcaption{font-family:var(--f-display);font-style:italic;font-size:14px;color:v
 .tl-y{font-family:var(--f-mono);font-size:13px;color:var(--gold);font-variant-numeric:tabular-nums;padding-top:3px}
 .tl h3{margin:0 0 5px;font-size:16px;font-weight:600;font-family:var(--f-body)}
 .tl p{margin:0;font-size:15px;color:var(--ink-2);max-width:60ch}
+.tl-src{display:inline-block;margin-top:10px;font-family:var(--f-mono);
+  font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--gold);text-decoration:none;border-bottom:1px solid transparent}
+.tl-src:hover{border-bottom-color:var(--gold)}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:9.5px;
+  font-weight:400;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--gold);border:1px solid var(--gold);padding:3px 8px;
+  margin-left:12px;vertical-align:2px}
+.tl-row.is-future{border-top-style:dashed}
+.tl-row.is-future h3,.tl-row.is-future p{color:var(--ink-2)}
+.tl-row.is-future:last-child{border-bottom-style:dashed}
 @media(max-width:620px){.tl-row{grid-template-columns:1fr;gap:6px}}
 
 /* ─────────── chain ─────────── */
@@ -190,12 +201,12 @@ a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
       <div class="s-head"><p class="mono gold">03 / Chronology</p><h2>Eight years, <em>in record.</em></h2></div>
       <div class="tl">
         <div class="tl-row"><span class="tl-y">2017</span><div><h3>Founded in Lagos</h3><p>Ramati Art Africa launches as Africa's first virtual gallery for emerging Nigerian artists.</p></div></div>
-        <div class="tl-row"><span class="tl-y">2017</span><div><h3>Featured in the Nigeria Art Market Report</h3><p>Listed among Nigeria's online art platforms for providing 3-D and virtual reality experiences of art shows.</p></div></div>
+        <div class="tl-row"><span class="tl-y">2017</span><div><h3>Featured in the Nigeria Art Market Report</h3><p>Listed among Nigeria's online art platforms for providing 3-D and virtual reality experiences of art shows.</p><a class="tl-src" href="https://jesscastellote.wordpress.com/wp-content/uploads/2018/02/namr-2017-as-at-1902018.pdf" rel="noopener">Nigeria Art Market Report 2017 ↗</a></div></div>
         <div class="tl-row"><span class="tl-y">2017</span><div><h3>The maiden Afriuture</h3><p>Julius Agbaje wins the first edition: a $2,500 grant, mentorship and exhibition.</p></div></div>
         <div class="tl-row"><span class="tl-y">2018—22</span><div><h3>Commonwealth Africa Initiative</h3><p>Exhibitions at international conferences on critical social and cultural themes, and artists taken to events across the diaspora.</p></div></div>
-        <div class="tl-row"><span class="tl-y">2023</span><div><h3>Access ART X Prize</h3><p>Julius Agbaje wins, years after Afriuture backed him first.</p></div></div>
-        <div class="tl-row"><span class="tl-y">2025</span><div><h3>Restructuring</h3><p>The competition pauses. The virtual gallery closes. The work turns toward provenance.</p></div></div>
-        <div class="tl-row"><span class="tl-y">2027</span><div><h3>ARcv launches — and Afriuture returns</h3><p>The archive opens, and the competition comes back with it.</p></div></div>
+        <div class="tl-row"><span class="tl-y">2023</span><div><h3>Access ART X Prize</h3><p>Julius Agbaje wins, years after Afriuture backed him first.</p><a class="tl-src" href="https://www.artxlagos.com/art-x-prize/2023" rel="noopener">ART X Lagos ↗</a></div></div>
+        <div class="tl-row"><span class="tl-y">2025—</span><div><h3>Restructuring</h3><p>The competition pauses. The virtual gallery closes. The work turns toward provenance.</p></div></div>
+        <div class="tl-row is-future"><span class="tl-y">2027</span><div><h3>ARcv opens <span class="tag">Forthcoming</span></h3><p>In build. The archive will open in 2027, and Afriuture will return with it.</p><a class="tl-src" href="https://arcv.art" rel="noopener">arcv.art ↗</a></div></div>
       </div>
     </div>
   </section>
