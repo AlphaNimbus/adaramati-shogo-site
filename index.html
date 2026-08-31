@@ -25,13 +25,15 @@ h1 em{font-style:italic;color:#cdbb91}
 .art-caption .title{display:block;font:500 13px "Cormorant Garamond";font-style:italic;color:#4a463f}
 footer{flex-shrink:0}
 @media(max-width:750px){
-body{overflow:auto}
-main{padding-top:70px}
-.hero{grid-template-columns:1fr;padding:4vh 0}
-.art{order:-1;padding:3vh 12vw 0;align-items:center}
+html,body{height:auto}
+body{overflow:visible}
+main{flex:none;display:block;padding-top:70px;min-height:0}
+.hero{flex:none;display:block;padding:4vh 0;min-height:0}
+.art{order:-1;padding:3vh 12vw 0;align-items:center;height:auto;display:flex}
 .art-caption{text-align:center}
 .art img{max-height:38vh}
 .actions{flex-wrap:wrap}
+footer{flex-shrink:unset}
 }
 </style>
 </head>
@@ -42,6 +44,8 @@ main{padding-top:70px}
 <a class="brand" href="index.html">
 <img src="images/wordmark-black.png" alt="Adáramátì Shògo" />
 </a>
+<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+<label for="nav-toggle" class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></label>
 <nav>
 <a href="about.html">About</a>
 <a href="art.html">Art Practice</a>
