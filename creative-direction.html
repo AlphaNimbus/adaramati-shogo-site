@@ -33,6 +33,11 @@
 .band em{font-style:italic}
 .item{padding:22px 0;border-bottom:1px solid #999286;display:grid;grid-template-columns:55px 1fr;font-size:12px}
 .item b{font:500 9px DM Mono;letter-spacing:.1em}
+.clients{padding:70px 0;border-top:1px solid rgba(0,0,0,.12)}
+.clientgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:44px 32px;align-items:center;margin-top:36px}
+.clientgrid img{max-height:44px;max-width:100%;width:auto;margin:0 auto;filter:grayscale(1);opacity:.7;transition:opacity 200ms cubic-bezier(.23,1,.32,1)}
+.clientgrid img:hover{opacity:1}
+@media(max-width:750px){.clientgrid{grid-template-columns:repeat(2,1fr);gap:36px 24px}}
 @media(max-width:750px){.grid,.bandgrid{grid-template-columns:1fr}
 .case:nth-child(2),.case:nth-child(4){margin-top:0}
 }
@@ -759,6 +764,24 @@ var PROJECTS = [
   .sw-img, .sw-panel, .sw-scrim, .sw-core { transition-duration: .01ms; }
 }
 </style>
+</div>
+</section>
+
+<section class="clients">
+<div class="container">
+<div class="mono gold">Selected Clients</div>
+<div class="clientgrid">
+<img src="images/Client Logo 1.png" alt="" loading="lazy">
+<img src="images/Client Logo 2.png" alt="" loading="lazy">
+<img src="images/Client Logo 3.png" alt="" loading="lazy">
+<img src="images/Client Logo 4.png" alt="" loading="lazy">
+<img src="images/Client Logo 5.png" alt="" loading="lazy">
+<img src="images/Client Logo 6.png" alt="" loading="lazy">
+<img src="images/Client Logo 7.png" alt="" loading="lazy">
+<img src="images/Client Logo 8.png" alt="" loading="lazy">
+<img src="images/Client Logo 9.png" alt="" loading="lazy">
+<img src="images/Client Logo 10.png" alt="" loading="lazy">
+</div>
 </div>
 </section>
 

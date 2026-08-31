@@ -17,23 +17,18 @@
 .gallery{padding:80px 0 140px}
 .head{display:flex;justify-content:space-between;border-bottom:1px solid rgba(0,0,0,.18);padding-bottom:20px;margin-bottom:50px}
 .head h2{font:500 clamp(55px,7vw,100px)/.8 "Cormorant Garamond";margin:0}
-.gallerygrid{display:grid;grid-template-columns:1fr 1fr;gap:70px 18px}
-.piece:first-child,.piece:last-child{grid-column:span 2}
-.image{aspect-ratio:1.25/1;background:radial-gradient(circle at 55% 40%,#bcae95,#62594c 35%,#171614 76%);position:relative;overflow:hidden}
-.piece:nth-child(2) .image{background:linear-gradient(145deg,#8c8271,#2c2822)}
-.piece:nth-child(3) .image{background:radial-gradient(circle at 60% 35%,#b57a48,#372116 32%,#0b0a09 75%)}
-.piece:last-child .image{aspect-ratio:1.7/1;background:linear-gradient(120deg,#d0c5af,#777063,#292721)}
-.image img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:6%}
-.meta{display:flex;justify-content:space-between;margin-top:12px;font:8px DM Mono;letter-spacing:.12em;text-transform:uppercase}
-.piece h3{font:500 48px/.9 "Cormorant Garamond";margin:10px 0}
+.gallerygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:60px 24px}
+.image{aspect-ratio:4/5;background:#e9e3d6;position:relative;overflow:hidden}
+.image img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:5%}
+.meta{display:flex;justify-content:space-between;margin-top:14px;font:8px DM Mono;letter-spacing:.12em;text-transform:uppercase;color:#8a8578}
+.piece h3{font:500 32px/1 "Cormorant Garamond";margin:8px 0}
 .piece p{font-size:11px;line-height:1.7;color:#706a60}
+@media(max-width:1100px){.gallerygrid{grid-template-columns:1fr 1fr}}
 .dark{background:#090909;color:#eeeae2;padding:120px 0}
 .dark h2{font:500 clamp(55px,7vw,105px)/.8 "Cormorant Garamond";margin:0}
 .dark em{font-style:italic;color:#c9b17d}
 .dark p{max-width:650px;color:#aaa69e;font-size:14px;line-height:1.9;margin-top:35px}
-@media(max-width:700px){.gallerygrid{grid-template-columns:1fr}
-.piece:first-child,.piece:last-child{grid-column:auto}
-}
+@media(max-width:700px){.gallerygrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -75,50 +70,110 @@
 
 <article class="piece">
 <div class="image">
-<img src="images/tender-loving.jpg" alt="Tender Loving, 2025" />
+<img src="images/silent-barrage-painting.jpg" alt="Silent Barrage, 2025" />
 </div>
 <div class="meta">
-<span>01 / Featured</span>
-<span>3D-Printed Sculpture</span>
+<span>01 / Selected</span>
+<span>Painting</span>
 </div>
-<h3>Tender Loving</h3>
-<p>2025 · 3D-printed sculpture.</p>
+<h3>Silent Barrage</h3>
+<p>2025 · Aerosol paint and auto base paint on aluminium · 122 × 85 cm</p>
 </article>
 
 <article class="piece">
 <div class="image">
-<img src="images/silent-barrage.jpg" alt="Silent Barrage, 2025" />
+<img src="images/silent-barrage-ii.jpg" alt="Silent Barrage II, 2025" />
 </div>
 <div class="meta">
 <span>02 / Selected</span>
-<span>3D-Printed Sculpture</span>
+<span>Painting</span>
 </div>
-<h3>Silent Barrage</h3>
-<p>2025 · 3D-printed sculpture.</p>
+<h3>Silent Barrage II</h3>
+<p>2025 · Aerosol paint and auto base paint on aluminium · 122 × 85 cm</p>
 </article>
 
 <article class="piece">
 <div class="image">
-<img src="images/heartburn.webp" alt="Heartburn" />
+<img src="images/silent-barrage-sculpture.png" alt="Silent Barrage, 2025, resin" />
 </div>
 <div class="meta">
 <span>03 / Selected</span>
-<span>3D-Printed Sculpture / AR</span>
+<span>Sculpture</span>
 </div>
-<h3>Heartburn</h3>
-<p>3D-printed sculpture with an augmented-reality experience.</p>
+<h3>Silent Barrage</h3>
+<p>2025 · Resin</p>
 </article>
 
 <article class="piece">
 <div class="image">
-<img src="images/the-wager.jpg" alt="The Wager" />
+<img src="images/heartburn-painting.jpg" alt="Heartburn, 2025" />
 </div>
 <div class="meta">
 <span>04 / Selected</span>
-<span>Digital Relief Study</span>
+<span>Painting</span>
 </div>
-<h3>The Wager</h3>
-<p>Digital relief study.</p>
+<h3>Heartburn</h3>
+<p>2025 · Aerosol paint and auto base paint on aluminium · 122 × 85 cm</p>
+</article>
+
+<article class="piece">
+<div class="image">
+<img src="images/heartburn-ii-sculpture.png" alt="Heartburn II, 2026, resin sculpture" />
+</div>
+<div class="meta">
+<span>05 / Selected</span>
+<span>Sculpture</span>
+</div>
+<h3>Heartburn II</h3>
+<p>2026 · Resin in epoxy resin</p>
+</article>
+
+<article class="piece">
+<div class="image">
+<img src="images/tender-loving.jpg" alt="Tender Loving, 2025" />
+</div>
+<div class="meta">
+<span>06 / Selected</span>
+<span>Sculpture</span>
+</div>
+<h3>Tender Loving</h3>
+<p>2025 · Resin</p>
+</article>
+
+<article class="piece">
+<div class="image">
+<img src="images/eden-ai.jpg" alt="Eden.AI, 2025" />
+</div>
+<div class="meta">
+<span>07 / Selected</span>
+<span>Painting</span>
+</div>
+<h3>Eden.AI</h3>
+<p>2025 · Aerosol paint and auto base paint on aluminium · 85 × 85 cm</p>
+</article>
+
+<article class="piece">
+<div class="image">
+<img src="images/inside-out.jpg" alt="Inside-Out, 2025" />
+</div>
+<div class="meta">
+<span>08 / Selected</span>
+<span>Painting</span>
+</div>
+<h3>Inside-Out</h3>
+<p>2025 · Aerosol paint and auto base paint on aluminium</p>
+</article>
+
+<article class="piece">
+<div class="image">
+<img src="images/searing-mirage.jpg" alt="Searing Mirage on the Sidewalk, 2025" />
+</div>
+<div class="meta">
+<span>09 / Selected</span>
+<span>Painting</span>
+</div>
+<h3>Searing Mirage on the Sidewalk</h3>
+<p>2025 · Aerosol paint and auto base paint on aluminium · 85 × 122 cm</p>
 </article>
 
 </div>
