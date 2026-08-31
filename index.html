@@ -9,17 +9,28 @@
 <link rel="icon" type="image/png" href="images/mark-round.png" />
 <link rel="stylesheet" href="shared.css" />
 <style>
-.hero{min-height:100svh;padding-top:82px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center}
-.copy{padding:8vw var(--pad)}
+html,body{height:100%}
+body{overflow:hidden;display:flex;flex-direction:column}
+main{flex:1;display:flex;padding-top:82px;min-height:0}
+.hero{flex:1;padding:0 0 2vh;display:grid;grid-template-columns:1.4fr .6fr;align-items:center;min-height:0}
+.copy{padding:0 var(--pad)}
 .gold{color:#c6a768}
-h1{font:500 clamp(75px,10vw,150px)/.7 "Cormorant Garamond";letter-spacing:-.07em;margin:28px 0}
+h1{font:500 clamp(52px,7vw,120px)/.72 "Cormorant Garamond";letter-spacing:-.07em;margin:18px 0}
 h1 em{font-style:italic;color:#cdbb91}
-.intro{max-width:610px;color:#69645b;font-size:14px;line-height:1.85}
-.actions{display:flex;gap:16px;margin-top:30px}
-.art{padding:6vw}
-.art img{width:100%}
-@media(max-width:750px){.hero{grid-template-columns:1fr}
-.art{order:-1;padding:8vw 12vw 0}
+.intro{max-width:560px;color:#69645b;font-size:13px;line-height:1.7}
+.actions{display:flex;gap:16px;margin-top:22px}
+.art{padding:0 6vw 0 0;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%}
+.art img{width:70%;max-width:220px;display:block}
+.art-caption{text-align:center;margin-top:16px}
+.art-caption .title{display:block;font:500 13px "Cormorant Garamond";font-style:italic;color:#4a463f}
+.art-caption .medium{display:block;margin-top:4px;font:500 8px DM Mono;letter-spacing:.14em;text-transform:uppercase;color:#a39d90}
+footer{flex-shrink:0}
+@media(max-width:750px){
+body{overflow:auto}
+main{padding-top:70px}
+.hero{grid-template-columns:1fr;padding:4vh 0}
+.art{order:-1;padding:3vh 12vw}
+.art img{max-width:180px}
 .actions{flex-wrap:wrap}
 }
 </style>
@@ -52,7 +63,11 @@ h1 em{font-style:italic;color:#cdbb91}
 </div>
 </div>
 <div class="art">
-<img src="images/heartburn.png" alt="Heartburn" />
+<img src="images/heartburn.webp" alt="Heartburn" />
+<div class="art-caption">
+<span class="title">Heartburn</span>
+<span class="medium">3D-Printed Sculpture / AR</span>
+</div>
 </div>
 </section>
 </main>
